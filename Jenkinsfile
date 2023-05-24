@@ -29,7 +29,7 @@ pipeline {
                             transfers: [
                                 sshTransfer(
                                     cleanRemote: false,
-                                    excludes: 'node_modules/,cypress/,**/*.yml,./scannerwork',
+                                    excludes: 'node_modules/,cypress/,**/*.yml,.scannerwork/',
                                     execCommand: '''
                                     cd /var/www/html
                                     npm ci
